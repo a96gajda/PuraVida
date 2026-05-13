@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pura Vida Host Solutions</title>
+
+    <!-- 🔥 PREMIUM FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <h2>Pura Vida Host Solutions</h2>
+
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+    <div class="nav-links" id="navLinks">
+        <a href="#services">Servicios</a>
+        <a href="#about">Sobre Nosotros</a>
+        <a href="#reviews">Opiniones</a>
+        <a href="#contact">Contacto</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="overlay fade">
+        <h1>Convierte tu propiedad en una inversión rentable y sin estrés</h1>
+
+        <p>
+            En Pura Vida Host Solutions nos encargamos de todo el proceso de gestión en Airbnb y Booking.com,
+            optimizando cada detalle para generar más ingresos y ofrecer experiencias excepcionales.
+        </p>
+
+        <a href="#contact" class="btn">
+            Contáctanos y agenda una consulta gratuita
+        </a>
+
+        <div class="badges">
+            <span>🏆 Airbnb Superhost</span>
+            <span>🌍 Huéspedes internacionales</span>
+            <span>📈 Optimización de ingresos</span>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section fade">
+    <h2>Servicios diseñados para maximizar tu propiedad</h2>
+
+    <div class="grid">
+        <div class="card">
+            <h3>Gestión Completa</h3>
+            <p>Nos encargamos de todo: publicación, precios, huéspedes, limpieza y mantenimiento.</p>
+        </div>
+
+        <div class="card">
+            <h3>Co-Hosting</h3>
+            <p>Trabajamos contigo para optimizar operaciones mientras mantienes control.</p>
+        </div>
+
+        <div class="card">
+            <h3>Consultoría</h3>
+            <p>Lanza o mejora tu Airbnb con estrategias reales y comprobadas.</p>
+        </div>
+
+        <div class="card">
+            <h3>Gestión de Ingresos</h3>
+            <p>Optimizamos precios dinámicamente para maximizar tus ingresos en cada temporada.</p>
+        </div>
+
+        <div class="card">
+            <h3>Optimización de Anuncios</h3>
+            <p>Mejoramos fotos, descripciones y posicionamiento para aumentar reservas.</p>
+        </div>
+
+        <div class="card">
+            <h3>Soluciones Personalizadas</h3>
+            <p>Adaptamos el servicio completamente a tu situación y objetivos.</p>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- ABOUT -->
+<section id="about" class="section about fade">
+
+    <div class="about-img">
+        <img src="images/profile.jpg">
+    </div>
+
+    <div class="about-text">
+        <h2>Conoce a Cristofer</h2>
+
+        <p>
+            Cristofer Herrera es anfitrión de Airbnb, emprendedor digital y viajero con experiencia en más de 30 países.
+        </p>
+
+        <p>
+            A través de años gestionando propiedades y viviendo como huésped, desarrolló una comprensión profunda de lo que realmente importa:
+            confianza, calidad y una experiencia única.
+        </p>
+
+        <p>
+            Hoy ayuda a propietarios en Costa Rica a transformar sus propiedades en negocios automatizados,
+            rentables y altamente valorados por los clientes.
+        </p>
+
+        <p class="highlight">
+            “No gestiono propiedades, creo sistemas que generan ingresos constantes.”
+        </p>
+    </div>
+
+</section>
+
+
+
+</section>
+
+<!-- REVIEWS -->
+
+<section id="reviews" class="section dark fade">
+    <h2>Experiencias de nuestros huéspedes</h2>
+
+    <div class="reviews">
+
+        <img src="images/review1.jpg">
+        <img src="images/review2.jpg">
+        <img src="images/review3.jpg">
+        <img src="images/review4.jpg">
+        <img src="images/review5.jpg">
+        <img src="images/review6.jpg">
+
+    </div>
+
+    <p class="reviews-text">
+        Opiniones reales de huéspedes internacionales que han vivido la experiencia Pura Vida.
+    </p>
+</section>
+
+
+<!-- CTA -->
+<section id="contact" class="cta fade">
+    <h2>Hablemos sobre tu propiedad</h2>
+
+    <p>
+        Descubre cuánto puede generar tu propiedad con una estrategia profesional.
+    </p>
+
+    <a href="mailto:puravidahostsolutions@gmail.com" class="btn">
+        Contactar ahora
+    </a>
+</section>
+
+<script>
+function toggleMenu() {
+    const menu = document.getElementById("navLinks");
+    menu.classList.toggle("active");
+}
+
+// zamykanie menu po kliknięciu
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        document.getElementById("navLinks").classList.remove("active");
+    });
+});
+
+// ANIMACJE SCROLL (bardziej dynamiczne)
+const faders = document.querySelectorAll('.fade');
+
+const appearOnScroll = new IntersectionObserver(function(entries){
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.classList.add('show');
+        }
+    });
+}, { threshold: 0.2 });
+
+faders.forEach(el => {
+    appearOnScroll.observe(el);
+});
+</script>
+
+</body>
+</html>
