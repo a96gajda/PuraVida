@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pura Vida Host Solutions</title>
+
+    <!-- 🔥 PREMIUM FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <h2>Pura Vida Host Solutions</h2>
+
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+    <div class="nav-links" id="navLinks">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="overlay fade">
+        <h1>Turn Your Property Into a High-Performing Vacation Rental</h1>
+
+        <p>
+            At Pura Vida Host Solutions, we help property owners maximize revenue, attract high-quality international guests, and deliver exceptional hospitality experiences.
+All while enjoying a completely stress-free management process.
+        </p>
+
+        <a href="#contact" class="btn">
+            Schedule a Free Consultation
+        </a>
+
+        <div class="badges">
+            <span>🏆 Airbnb Superhost Experience</span>
+            <span>🌍 International Guest Expertise</span>
+            <span>📈 Revenue & Listing Optimization</span>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section fade">
+    <h2>Hospitality Solutions Designed to Maximize Your Property’s Potential</h2>
+
+    <div class="grid">
+        <div class="card">
+            <h3>Full-Service Property Management</h3>
+            <p>From guest communication and dynamic pricing to housekeeping coordination and maintenance oversight, we manage every aspect of your vacation rental with professionalism and care.</p>
+        </div>
+
+        <div class="card">
+            <h3>Co-Hosting & Operational Support</h3>
+            <p>Maintain control of your property while we help optimize operations, guest experience, and day-to-day management.</p>
+        </div>
+
+        <div class="card">
+            <h3>Vacation Rental Consulting</h3>
+            <p>Launch or improve your Airbnb with proven hospitality strategies, revenue-focused guidance, and real-world hosting expertise.</p>
+        </div>
+
+        <div class="card">
+            <h3>Revenue Optimization</h3>
+            <p>We use dynamic pricing strategies, market analysis, and seasonal optimization techniques to maximize your property’s earning potential year-round.</p>
+        </div>
+
+        <div class="card">
+            <h3>Listing & Marketing Optimization</h3>
+            <p>We enhance your property presentation through optimized descriptions, strategic positioning, and high-converting visual branding.</p>
+        </div>
+
+        <div class="card">
+            <h3>Customized Hospitality Solutions</h3>
+            <p>Every property is unique. We tailor our services to match your goals, operational needs, and investment strategy.</p>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- ABOUT -->
+<section id="about" class="section about fade">
+
+    <div class="about-img">
+        <img src="images/profile.jpg">
+    </div>
+
+    <div class="about-text">
+        <h2>Meet the Founder</h2>
+
+        <p>
+            Cristofer Herrera is an Airbnb Superhost and hospitality professional with experience managing vacation rentals in Mexico and Costa Rica.
+        </p>
+
+        <p>
+            Through years of working directly with guests and coordinating day-to-day property operations, he developed a strong understanding of what creates a great guest experience: clear communication, attention to detail, reliability, and authentic hospitality.
+        </p>
+
+        <p>
+            Today, through Pura Vida Host Solutions, he helps property owners improve their vacation rentals through personalized support, operational organization, and revenue-focused strategies.
+
+        </p>
+       <p>
+            With international travel experience and a multilingual background, Cristofer brings a modern and approachable perspective to hospitality management in Costa Rica.
+        </p>
+
+        <p class="highlight">
+            “Great hospitality is built through trust, consistency, and attention to detail.”
+        </p>
+    </div>
+
+</section>
+
+
+
+</section>
+
+<!-- REVIEWS -->
+
+<section id="reviews" class="section dark fade">
+    <h2>Guest Experiences</h2>
+
+    <div class="reviews">
+
+        <img src="images/review1.jpg">
+        <img src="images/review2.jpg">
+        <img src="images/review3.jpg">
+        <img src="images/review4.jpg">
+        <img src="images/review5.jpg">
+        <img src="images/review6.jpg">
+
+    </div>
+
+    <p class="reviews-text">
+        Real reviews from international guests who have experienced the Pura Vida stay.
+    </p>
+</section>
+
+
+<!-- CTA -->
+<section id="contact" class="cta fade">
+    <h2>Let’s Unlock Your Property’s Full Potential</h2>
+
+    <p>
+        Discover how professional hospitality management and revenue-focused strategies can help maximize your property’s performance.
+    </p>
+
+
+<div class="cta-buttons">
+
+    <a href="https://wa.me/50660252619?text=Hi%2C%20I%E2%80%99d%20like%20to%20learn%20more%20about%20the%20services%20offered%20by%20Pura%20Vida%20Host%20Solutions.%20Could%20you%20please%20share%20more%20details%3F%20Thank%20You%21" class="btn">
+        Contact via WhatsApp
+    </a>
+
+    <a href="mailto:puravidahostsolutions@gmail.com?subject=Service%20Inquiry&body=Hi%2C%20I%E2%80%99d%20like%20to%20learn%20more%20about%20the%20services%20offered%20by%20Pura%20Vida%20Host%20Solutions.%20Could%20you%20please%20share%20more%20details%3F%20Thank%20You%21" class="btn btn-secondary">
+        Contact via Email
+    </a>
+
+</div>
+
+    <p>
+tel: +506 6025 2619
+    </p>
+    <p>
+e-mail: puravidahostsolutions@gmail.com
+    </p>
+</section>
+
+<script>
+function toggleMenu() {
+    const menu = document.getElementById("navLinks");
+    menu.classList.toggle("active");
+}
+
+// zamykanie menu po kliknięciu
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        document.getElementById("navLinks").classList.remove("active");
+    });
+});
+
+// ANIMACJE SCROLL (bardziej dynamiczne)
+const faders = document.querySelectorAll('.fade');
+
+const appearOnScroll = new IntersectionObserver(function(entries){
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.classList.add('show');
+        }
+    });
+}, { threshold: 0.2 });
+
+faders.forEach(el => {
+    appearOnScroll.observe(el);
+});
+</script>
+
+
+<a href="https://wa.me/50660252619?text=Hi%2C%20I%E2%80%99d%20like%20to%20learn%20more%20about%20the%20services%20offered%20by%20Pura%20Vida%20Host%20Solutions.%20Could%20you%20please%20share%20more%20details%3F%20Thank%20You%21"
+   class="whatsapp-float"
+   target="_blank">
+    
+    💬
+</a>
+
+
+</body>
+</html>
